@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "My Custom JS Injector",
+  "version": "1.0",
+  "description": "Inject custom JavaScript into a specific website.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://ycc.ytel.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://ycc.ytel.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
